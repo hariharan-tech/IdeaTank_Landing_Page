@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Title</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" charset="utf-8"></script>
+<script type="text/javascript">
+function closebar(){
+    document.getElementById('container').style.width="0px";
+
+document.getElementById('close').style.visibility="hidden";
+document.getElementById('about').style.visibility="hidden";
+document.getElementById('worth').style.visibility="hidden";
+document.getElementById('home').style.visibility="hidden";
+document.getElementById('follow').style.visibility="hidden";
+
+document.getElementById('about').style.width="0px";
+document.getElementById('worth').style.width="0px";
+document.getElementById('home').style.width="0px";
+document.getElementById('follow').style.width="0px";
+
+}
+function openbar(){
+  document.getElementById('container').style.width="1344px";
+  document.getElementById('close').style.visibility="visible";
+  document.getElementById('about').style.visibility="visible";
+  document.getElementById('worth').style.visibility="visible";
+  document.getElementById('home').style.visibility="visible";
+  document.getElementById('follow').style.visibility="visible";
+
+  document.getElementById('about').style.width="1344px";
+  document.getElementById('worth').style.width="1344px";
+  document.getElementById('home').style.width="1344px";
+  document.getElementById('follow').style.width="1344px";
+}
+
+</script>
+<body>
+  <section class="frontsection">
+    <div id="container">
+  <button type="button" name="button" id="close" onclick="closebar()">X</button>
+  <button type="button" name="button"id="home">Home</button>
+  <button type="button" name="button"id="about">About Us</button>
+  <button type="button" name="button"id="worth">Idea's Worth It</button>
+  <button type="button" name="button"id="follow">Follow/Contact Us</button>
+    </div>
+    <nav class="navbar">
+      <div class="ideatank_logo">
+        <span class="ideatank_name">IDEATANK</span>
+        <span class="ideatank_tagline">Tagline</span>
+      </div>
+      <div class="bars">
+        <a class="cursor" onclick="openbar()">
+          <span class="rect1"></span>
+          <span class="rect2"></span>
+          <span class="rect3"></span>
+        </a>
+      </div>
+    </nav>
+    <!-- _____________BACKGROUND IMAGE_____________ -->
+    <div class="bgimg">
+    </div>
+    <div class="go">
+  <p class="learn">GO</p>
+    </div>
+  </section>
+  <!-- EDIT-1 -->
+  <!-- <div class="testdiv"> -->
+    <!-- <span class="testabout">About</span> -->
+  <!-- </div> -->
+  <section class="ideasareworthit_section">
+    <span class="ideasareworthit">Every proper Idea is Worthy!</span>
+    <p class="ideasworth_descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  </section>
+  <hr>
+  <section class="whoarewesection">
+    <span class="whoare">WHO ARE</span>
+    <br>
+    <span class="ideatankintro-we">WE?</span>
+    <p class="whoarewe_descrip">IdeaTank is a webpage or web app where people from different sections like students ,
+      freelancer, investors can share their project idea or where people can solve a common
+      problem or a professional can post some skill development courses.</p>
+  </section>
+  <hr>
+  <section class="categorydiscussion_section">
+    <table class="categorytable">
+      <tr>
+        <td class="hoverimg">
+      </td>
+        <td class="categories_pandhover">
+          <p class="categories_descrip">IdeaTank Webpage is basically divided into Four Section which are:</p>
+          <span class="cideathinker">For Idea-Thinkers :<br>to post their Innovative Ideas.</span>
+          <span class="cinvestor">For Investor / Corporates :<br>to invest in ideas for making a Startup.</span>
+          <span class="cindustrialist">For Industrialist :<br>to get innovative solutions for their Industry based problems.</span>
+          <span class="cprofessional">For Professionals :<br>to upload course contents for skill development of students.</span>
+        </td>
+      </tr>
+    </table>
+    <!-- <div class="studentopt"> -->
+      <!-- <span>Student</span> -->
+    <!-- </div> -->
+  </section>
+  <hr>
+  <section class="followus_section">
+    <h1 class="followuson">Follow us on:</h1>
+    <table class="followustable">
+      <tr>
+        <td><a href="#" class="followlink"><i class="fab fa-twitter"></i></a></td>
+        <td><a href="#"><span class="followtxt">Twitter</span></a></td>
+      </tr>
+      <tr>
+        <td><a href="#" class="followlink"><i class="fab fa-instagram"></i></a></td>
+        <td><a href="#"><span class="followtxt">Instagram</span></a></td>
+      </tr>
+      <tr>
+        <td><a href="#" class="followlink"><i class="fab fa-facebook-square"></i></a></td>
+        <td><a href="#"><span class="followtxt">Facebook</span></a></td>
+      </tr>
+      <tr>
+        <td><a href="#" class="followlink"><i class="fab fa-youtube"></i></a></td>
+        <td><a href="#"><span class="followtxt">YouTube</span></a></td>
+      </tr>
+    </table>
+    </div>
+  </section>
+</body>
+</html>

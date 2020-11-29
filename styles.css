@@ -1,0 +1,503 @@
+body {
+background-color: black;
+position: relative;
+margin: 0;
+}
+
+h1,p,span{
+color:white;
+margin:0;
+}
+
+.frontsection{
+  position:relative;
+}
+
+/*
+.testdiv{
+text-align: center;
+z-index: 2;
+background-color:white;
+opacity: 0.6;
+width:100%;
+position:absolute;
+left:0;
+top:200px;
+}
+
+.testdiv:hover{
+background-color: red;
+opacity: 0.6;
+}
+
+.testabout{
+color:black;
+font-size: 50px;
+opacity:1;
+}
+
+.testdiv:hover > .testabout{
+color:white;
+}
+*/
+.navbar{
+display: inline-flex;
+background-color: transparent;
+width: 100%;
+position: relative;
+position: fixed;
+margin: 0 1.45% 0 1.45%;
+z-index: 1;
+}
+
+span {
+margin: 0;
+/*  color:white;*/
+}
+
+.ideatank_logo {
+display: inline-block;
+top: 0;
+left: 0;
+}
+
+.ideatank_name {
+display: block;
+font-family: 'Goldman', cursive;
+font-size: 39px;
+color: white;
+}
+
+.ideatank_tagline {
+display: block;
+font-family: 'Big Shoulders Stencil Display', cursive;
+font-size: 30px;
+text-align: center;
+color: white;
+}
+
+.bars {
+display: inline-block;
+height: 65%;
+width: 6.5%;
+color: white;
+position: absolute;
+right: 2.75%;
+top: 10%;
+}
+
+.cursor {
+cursor: pointer;
+}
+
+.rect1 {
+display: block;
+position: relative;
+width: 66.67%;
+height: 20.78%;
+background-color: white;
+margin-bottom: 7.4%;
+border-radius: 0 7px 7px 0;
+}
+
+.rect2 {
+display: block;
+position: relative;
+width: 100%;
+height: 20.78%;
+background-color: white;
+margin-bottom: 7.4%;
+border-radius: 0 7px 7px 0;
+}
+
+.rect3 {
+display: block;
+position: relative;
+width: 81.34%;
+height: 20.78%;
+background-color: white;
+border-radius: 0 7px 7px 0;
+}
+
+.bgimg {
+z-index: -1;
+width: 100%;
+top: 0;
+left: 0;
+animation: images 30s linear infinite;
+animation-direction: alternate;
+transition: 0;
+background-size: contain;
+background-repeat: no-repeat;
+height: 0;
+padding-top: 48.74%;
+/* TRICK */
+/* (img-height / img-width * container-width) */
+/* (853 / 1280 * 100) */
+}
+
+@keyframes images {
+0% {
+  background-image: url("coding.png");
+}
+
+20% {
+  background-image: url("cooking.png");
+}
+
+40% {
+  background-image: url("electronics.png");
+}
+
+60% {
+  background-image: url("networking.jpeg");
+}
+
+80% {
+  background-image: url("photography.png");
+}
+
+100% {
+  background-image: url("webdesign.png");
+}
+}
+
+.go{
+  border:2px solid #120078;
+  background: red;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 81%;
+  height: 59px;
+  width: 90px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: 'Anton', sans-serif;
+}
+.go:hover{
+  animation: shade 3s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes shade {
+  0%{
+    background: #BC4899;
+  }
+  15%{
+    background: #6600FF;
+  }
+  30%{
+    background: #633200;
+  }
+  45%{
+    background: green;
+  }
+  60%{
+    background: #fecd1a;
+  }
+  75%{
+    background: orange;
+  }
+  100%{
+    background: red;
+  }
+}
+.learn{
+  position: absolute;
+  display: inline;
+  background: none;
+  color: white;
+  font-size: 45px;
+  /* height: 20px; */
+  /* width: 40px; */
+  top:2px;
+  left: 10px;
+}
+
+hr{
+width: 10%;
+color: white;
+border-style: dotted none none none;
+background-color: black;
+border-width: 4px;
+}
+
+.ideasareworthit_section{
+text-align: center;
+padding:25% 0 25% 0;
+}
+
+.ideasareworthit{
+color: white;
+font-family: 'Roboto', sans-serif;
+font-size: 30px;
+}
+
+.ideasworth_descrip{
+color: white;
+font-family: 'Roboto', sans-serif;
+font-size: 30px;
+padding: 0 10%;
+text-align: center;
+}
+
+.whoare{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.ideatankintro-we{
+color:white;
+font-family: 'Roboto', sans-serif;
+font-style: italic;
+font-size: 30px;
+}
+
+.whoarewesection{
+text-align: center;
+background-color: black;
+padding:15% 10% 25% 10%;
+}
+
+.whoarewe_descrip{
+text-align: center;
+font-family: 'Roboto', sans-serif;
+color:white;
+font-size: 30px;
+padding: 0 10%;
+}
+
+.hoverimg{
+background-size: contain;
+background-repeat: no-repeat;
+animation: tabimg 30s ease-in infinite;
+animation-direction: alternate;
+transition:0;
+height: 0;
+padding-top: 42%;
+width: 27%;
+}
+
+@keyframes tabimg {
+0%,100% {
+  background-image: url("1.png");
+}
+
+25% {
+  background-image: url("2.png");
+}
+
+50% {
+  background-image: url("3.png");
+}
+
+75% {
+  background-image: url("4.png");
+}
+}
+
+.categorydiscussion_section{
+background-color:black;
+padding:10% 0 5% 0;
+position: relative;
+}
+
+.categories_descrip{
+font-family: 'Roboto', sans-serif;
+color:white;
+font-size: 30px;
+margin-bottom:10%;
+
+}
+
+.categories_pandhover{
+display: inline-grid;
+}
+
+.categorytable{
+width: 100%;
+border-spacing: 50px 0 ;
+table-layout: fixed;
+}
+
+.cideathinker{
+display: inline-block;
+color:white;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+margin-bottom:6%;
+}
+.cinvestor{
+display: inline-block;
+color:white;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+margin-bottom:6%;
+}
+.cindustrialist{
+display: inline-block;
+color:white;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+margin-bottom:6%;
+}
+.cprofessional{
+display: inline-block;
+color:white;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+margin-bottom:6%;
+}
+
+.cideathinker:hover{
+background-color: red;
+font-size: 21px;
+transition: 0.3s;
+cursor: pointer;
+}
+.cinvestor:hover{
+background-color: red;
+font-size: 21px;
+transition: 0.3s;
+cursor: pointer;
+}
+.cindustrialist:hover{
+background-color: red;
+font-size: 21px;
+transition: 0.3s;
+cursor: pointer;
+}
+.cprofessional:hover{
+background-color: red;
+font-size: 21px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.followus_section{
+padding:10% 0 10% 0;
+}
+
+.followuson{
+font-size: 30px;
+color:white;
+display: block;
+text-align: center;
+margin-bottom: 1%;
+}
+
+.followustable{
+margin:0 auto;
+text-align: center;
+}
+
+.followtxt{
+font-size: 30px;
+}
+#container{
+  border: 2px solid #120078;
+  border-radius: 10px;
+  width: 0px;
+  height: 320px;
+  background: #120078;
+  position: fixed;
+  top: 102px;
+  right: 11px;
+opacity: 0.6;
+transition: 0.4s;
+}
+#close{
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  color: white;
+  font-size: 23px;
+  opacity: 1;
+  height: 40px;
+  width: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+}
+#home{
+  position: absolute;
+  top: 36px;
+  left: 0px;
+  color: white;
+  justify-content: center;
+  width: 1344px;
+  height: 50px;
+  font-size: 23px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+#about{
+  position: absolute;
+  top: 96px;
+  left: 0px;
+  width: 1344px;
+  height: 50px;
+  font-size: 23px;
+  background: none;
+  border:none;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+#worth{
+  position: absolute;
+  top: 155px;
+  left: 0px;
+  width: 1344px;
+  height: 50px;
+  font-size: 23px;
+  background: none;
+  border:none;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+#follow{
+  position: absolute;
+  top: 210px;
+  left: 0px;
+  width: 1344px;
+  height: 50px;
+  font-size: 23px;
+  background: none;
+  border:none;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+#home:hover{
+  background: red;
+  font-size: 30px;
+  transition: 0.2s;
+}
+#about:hover{
+  background: red;
+  font-size: 30px;
+  transition: 0.2s;
+}
+#worth:hover{
+  background: red;
+  font-size: 30px;
+  transition: 0.2s;
+}
+#follow:hover{
+  background: red;
+  font-size: 30px;
+transition: 0.2s;
+}
+#close:hover{
+  background: red;
+}
+.followlink{
+  background: black;
+  color: white;
+  font-size: 31px;
+}
